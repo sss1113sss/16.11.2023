@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herbolabz</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'img/logo/test2.png' %}">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>   
+</head>
+<body>
+
+    <section id ="home">
+
+        <div class="header">
+
+            <div class="logo">
+                 <img src="{% static 'img/logo/test2.png'%}" alt="">
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Asosiy</a></li>
+                      
+                        <li><a href="indexrus.html">РУС</a></li>
+                        </ul>
+                    
+                </nav>
+            </div>
+
+        </div>
+        <div class="maini">
+           
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="{% static 'img/obshiy/вебсайт.jpg' %}" alt=""></div>
+                  <div class="swiper-slide"><img src="{% static 'img/obshiy/herbalabz3.png'%}" alt=""></div>
+                  <div class="swiper-slide"><img src="{% static 'img/obshiy/obshiyfinalv2.png'%}" alt=""></div>
+
+                  
+                  
+                </div>
+              
+                <div class="swiper-pagination"></div>
+              
+                
+               
+             
+              </div>
+              
+        </div>
+
+       <div class="maindivimg">
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/222.png'%}" alt="">
+          <a id="btn" class="btn btn1"  href="qovoqyogi.html">Batafsil ma'lumot</a>
+        </div>       
+
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/333.png'%}" alt="">
+            <a id="btn"  class="btn btn1"  href="sezam.html">Batafsil ma'lumot</a>
+        </div>
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/444.png'%}" alt="">
+            <a  id="btn"  class="btn btn1"  href="qaorasedana.html">Batafsil ma'lumot</a>
+        </div>
+
+        
+        
+       </div>
+       <div class="maindivimg">
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/555.png'%}" alt="">
+            <a id="btn" class="btn btn1"  href="ultracard.html">Batafsil ma'lumot</a>
+        </div>
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/666.png'%}" alt="">
+            <a id="btn"  class="btn btn1"  href="exsize.html">Batafsil ma'lumot</a>
+        </div>
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/777.png'%}" alt="">
+            <a id="btn" class="btn btn1"  href="grandslim.html">Batafsil ma'lumot</a>        </div>
+       </div>
+
+
+        <div class="maindivimg">
+        <div class="ultraprodiv">
+            <img class="ultrapro" src="{% static 'img/uz/1111.pn'%}g" alt="">
+            <a id="btn"  class="btn btn1"  href="ultrapro.html">Batafsil ma'lumot</a>
+        </div>
+        </div>
+
+        
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:1000,
+            disableOnInteraction:false,
+        },
+        loop: true,
+      
+     
+        pagination: {
+          el: '.swiper-pagination',
+          clickable:true
+        },
+       
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+ 
+      });
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>
